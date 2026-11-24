@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pra você 💜</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="pg" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff9ccf"/><stop offset=".5" stop-color="#ffe3f1"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<symbol id="lily" viewBox="0 0 100 100">
+<g fill="url(#pg)" stroke="#e9a6cf" stroke-width=".6"><path id="pt" d="M50 50C33 34 38 10 50 2C62 10 67 34 50 50Z"/><use href="#pt" transform="rotate(60 50 50)"/><use href="#pt" transform="rotate(120 50 50)"/><use href="#pt" transform="rotate(180 50 50)"/><use href="#pt" transform="rotate(240 50 50)"/><use href="#pt" transform="rotate(300 50 50)"/></g>
+<g stroke="#f7b733" stroke-width="1.3"><path d="M50 50L50 24M50 50L35 30M50 50L65 30M50 50L30 44M50 50L70 44"/></g>
+<g fill="#d9480f"><circle cx="50" cy="24" r="2.6"/><circle cx="35" cy="30" r="2.6"/><circle cx="65" cy="30" r="2.6"/><circle cx="30" cy="44" r="2.6"/><circle cx="70" cy="44" r="2.6"/></g>
+</symbol></defs></svg>
+<canvas id="fx"></canvas>
+<button class="mus" id="mus">🎵 tocar</button>
+
+<section id="top" class="hero" data-ly="tl,tr,bl,br">
+ <div class="in">
+  <div class="ring rv"><img class="ph" alt="" src="media/foto1.jpg"></div>
+  <h1 class="rv"><span class="gt">Feito pra você</span> 💜</h1>
+  <p class="type"><span id="tw"></span></p>
+  <p class="small rv">Toque em “tocar” lá em cima para ouvir a música. Depois role a página ↓</p>
+ </div>
+</section>
+
+<section data-ly="tr,bl">
+ <div class="in">
+  <h2 class="rv">✨ Um pouquinho sobre você ✨</h2>
+  <img class="ph sm rv" alt="" src="media/foto2.jpg">
+  <div class="card rv"><div class="poem">É engraçado e, ao mesmo tempo, tão bonito perceber como conhecer alguém pode transformar os nossos dias. Com você, cada conversa vira um momento que eu espero com alegria.
+
+Gosto de verdade de ouvir você falar sobre tudo o que faz o seu coração feliz. Quando você explica cada detalhe, com aquele brilho na voz, eu percebo o quanto cuida e valoriza o que ama. É o seu jeito, tão sincero e especial, de mostrar que cada detalhe importa.
+
+E o BTS, claro, tem um lugar lindo na sua vida, e eu adoro ver como esse grupo te deixa tão feliz. Pelas suas histórias e explicações, pude conhecer um pouquinho desse mundo tão importante para você: músicas, mensagens e momentos que eu provavelmente nunca teria conhecido de outra forma. Isso é um presente que você me dá todos os dias.
+
+Não dá para olhar para você e não reparar no quanto os seus cachos são incríveis. Tão cheios de vida, com um brilho que é só seu. Eles têm uma personalidade linda, assim como você, e é como se cada cacho guardasse um pouquinho da sua essência.
+
+Eu poderia ficar aqui escrevendo por muito tempo, mas sei que alguns sentimentos são melhores vividos do que explicados. Então, de forma simples e verdadeira: é maravilhoso conhecer você, um pouquinho a cada dia.</div></div>
+ </div>
+</section>
+
+<section data-ly="tl,br">
+ <div class="in wide">
+  <h2 class="rv">Trilha sonora</h2>
+  <p class="rv">15 espaços para as músicas dela. 🎶</p>
+  <div id="tl" class="rv"></div>
+ </div>
+</section>
+
+<section data-ly="tr,bl">
+ <div class="in">
+  <h2 class="rv">Quiz: você é ARMY de verdade?</h2>
+  <p class="rv">15 perguntas. Algumas são bem difíceis. 😏</p>
+  <div class="card rv" id="quiz"></div>
+ </div>
+</section>
+
+<section data-ly="tr,bl">
+ <div class="in">
+  <h2 class="rv">Qual membro combina com você?</h2>
+  <p class="rv">Responda sem pensar muito. 💜</p>
+  <div class="card rv" id="mq"></div>
+ </div>
+</section>
+
+<section data-ly="tl,br">
+ <div class="in wide">
+  <h2 class="rv">Acenda o estádio</h2>
+  <p class="rv">Toque ou arraste para acender as luzes. Vamos fazer um mar roxo. 💜</p>
+  <div class="stage rv"><canvas id="sea"></canvas><div id="cnt">0 luzes acesas</div></div>
+ </div>
+</section>
+
+<section id="show" data-ly="tl,tr,bl,br">
+ <div class="in wide">
+  <h2 class="rv">A noite do show</h2>
+  <div class="vgrid rv">
+   <figure class="vf"><svg class="ly mini" viewBox="0 0 100 100"><use href="#lily"/></svg><div class="vw"><video playsinline preload="metadata" disablepictureinpicture controlslist="nodownload noplaybackrate" poster="media/poster1.jpg" src="media/v1.mp4"></video><button class="pp" aria-label="Tocar">▶</button><button class="sn" aria-label="Som">🔊</button><div class="vb"><i></i></div></div><figcaption>Momento 1</figcaption></figure>
+   <figure class="vf"><svg class="ly mini l2" viewBox="0 0 100 100"><use href="#lily"/></svg><div class="vw"><video playsinline preload="metadata" disablepictureinpicture controlslist="nodownload noplaybackrate" poster="media/poster2.jpg" src="media/v2.mp4"></video><button class="pp" aria-label="Tocar">▶</button><button class="sn" aria-label="Som">🔊</button><div class="vb"><i></i></div></div><figcaption>Momento 2</figcaption></figure>
+  </div>
+  <div class="card rv">
+   <p class="tx">Algumas noites ficam guardadas no peito, e não só na galeria do celular. Nesses vídeos dá para ver as luzes roxas acesas, a voz de todo mundo junta e a alegria de quem esperou muito por esse momento.</p>
+   <p class="tx">Foi uma noite em que a emoção tomou conta de tudo e ninguém precisou explicar nada. Eu queria que você lembrasse dessa noite sempre que precisasse sorrir. 💜</p>
+  </div>
+ </div>
+</section>
+
+<section id="pc" data-ly="tr,bl">
+ <div class="in">
+  <h2 class="rv">Seu photocard</h2>
+  <div class="rv"><div class="pcw"><div class="pcard" id="pcard">
+   <div class="face front"><img alt="" src="media/photocard.jpg"><div class="holo"></div><div class="cap"><b>ARMY</b><span id="pn"></span></div></div>
+   <div class="face back"><div class="bk"><span>💜</span><h3>Borahae</h3><p id="pm"></p><small>ARMY No. 0001 · edição limitada</small></div></div>
+  </div></div></div>
+  <h2 class="rv" style="margin-top:56px">Sua carteirinha</h2>
+  <div class="rv"><div class="idf"><div class="idw" id="idw"><div class="id" id="id">
+   <div class="cf cfront"><div class="holo"></div>
+    <div class="lg"><b>dna</b><small>Documento<br>Nacional<br>do ARMY</small></div>
+    <div class="lr"><b>ARMY.BR</b><small>ENTIDADE FANDOM</small></div>
+    <img class="cph" alt="" src="media/carteirinha.jpg">
+    <div class="cqr" id="cqr"></div>
+    <div class="cdt"><p class="cn" id="cn"></p><p>ARMY VETERANA · DESDE 2016</p><p>ACOMPANHANDO O BTS HÁ 10 ANOS</p><p>EXCLUSIVO · EDIÇÃO LIMITADA</p><p class="l"><b>Tempo de ARMY</b> 10 anos</p><p class="l"><b>Carteirinha Nº</b> 0001</p><p class="l"><b>Status</b> Veterana</p></div>
+    <div class="ccd"><b>Código de uso</b> BORAHAE-0007</div>
+    <div class="cse"><b>10</b><small>ANOS</small></div>
+   </div>
+   <div class="cf cback"><div class="holo"></div>
+    <div class="cst"></div>
+    <div class="cbm"><p class="cm" id="cm"></p><p>1. Exclusiva de quem acompanha há 10 anos.<br>2. Só ela pode ter este card: pessoal e intransferível.<br>3. Saudade? Veja um vídeo e abrace alguém.</p></div>
+    <div class="cbc"></div><div class="cbn">BORAHAE-0007 · ARMY HÁ 10 ANOS</div>
+    <div class="csg"><i>💜</i><small>assinatura da ARMY</small></div>
+   </div>
+  </div></div></div></div>
+ </div>
+</section>
+
+<section data-ly="tl,br">
+ <div class="in">
+  <h2 class="rv">Uma última coisa</h2>
+  <button id="lb" class="rv">Abrir 💌</button>
+  <div id="letter" class="card ded"><div class="disc"><span>💜</span></div><p class="dt" id="dt"></p><p class="small" id="da"></p><p class="tx dm" id="dm"></p><button id="ded">▶ Ouvir</button></div>
+ </div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+COMO USAR NO VISUAL STUDIO CODE
+1. Abra a pasta "site-bts" no VS Code (Arquivo > Abrir Pasta).
+2. Instale a extensão "Live Server" e clique em "Go Live" para ver o site no navegador.
+3. Arquivos: index.html (conteúdo), css/style.css (visual), js/script.js (efeitos, quiz e músicas), media/ (fotos e vídeos).
+
+COMO COLOCAR AS MÚSICAS
+- Coloque os .mp3 na pasta music/.
+- Em js/script.js, no topo, cada linha da lista SONGS é um cartão da Trilha sonora. Para ativar uma música, preencha o s: com o caminho, por exemplo s:'music/take-two.mp3'. Você pode trocar os títulos e frases.
+- A música dedicada (seção "Uma última coisa") é uma só: na variável DED coloque o título (t), a mensagem sua (m) e o caminho do mp3 (s).
+
+PHOTOCARD: em js/script.js, na variável HER, coloque o nome dela (name) e a sua mensagem do verso (msg).
+PARA TROCAR O POEMA: edite o texto dentro de <div class="poem"> no index.html.
+Para vídeos em qualidade melhor, troque media/v1.mp4 e media/v2.mp4 pelos originais (mantenha os mesmos nomes).
+
+CARTEIRINHA (seção "Seu photocard"): em js/script.js, na variável HER, preencha name e msg (a mensagem aparece no verso). A foto da frente é media/carteirinha.jpg (e a do photocard é media/photocard.jpg) (troque mantendo o nome). Ela vira ao passar o mouse; no celular, toque.
+
+NOTA: os .mp3 da pasta music/ são trechos de 16 segundos (a parte mais forte de cada música), para o site ficar leve.
+A seção final agora tem o botão "Abrir" que mostra a música dedicada e já começa a tocar.
